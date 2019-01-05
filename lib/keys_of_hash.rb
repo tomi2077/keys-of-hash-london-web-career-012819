@@ -3,7 +3,7 @@ require 'pry'
 class Hash
   def keys_of(*arguments)
     arr = []
-    self.each do |a,b|
+    keys = collect do |a, b|
       if arguments == b
         arr << a
       end
