@@ -4,11 +4,11 @@ require 'pry'
 
 class Hash
   def keys_of(*arguments)
-    keys = collect do |k, v|
-      if arguments.include?v
-        k
+    self = collect do |a, b|
+      if arguments.include?b
+        a
       end
     end
-    keys.compact 
+    self.compact 
   end
 end
