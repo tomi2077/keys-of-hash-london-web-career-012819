@@ -8,6 +8,6 @@ class Hash
         arr << a
       end
     end
-    arr
+    arr.compact
   end
 end
