@@ -3,7 +3,7 @@ class Hash
     arr = []
     arguments.each do |a,b|
       if arguments.include?(b)
-      return arr << a.keys
+      return arr << a
     end
   end
 end
