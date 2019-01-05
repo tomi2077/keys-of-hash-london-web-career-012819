@@ -1,7 +1,7 @@
 require 'pry'
 
 class Hash
-  def keys_of(arguments)
+  def keys_of(*arguments)
     arr = []
     self.each do |a,b|
       if arguments == b
